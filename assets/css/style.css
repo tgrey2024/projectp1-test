@@ -1,0 +1,83 @@
+/* resets browser to clean slate */
+/* reset to remove any default padding and margin that browsers apply to elements */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 45px;
+}
+
+
+header nav ul{
+/* turns ul into flex container, which helps in aligning and distributing space among items within the container */
+    display: flex;
+/* adds margin to the left of ul, pushing it 80% across its containing element */
+    margin-left: 80%;
+    list-style: none;
+}
+
+header nav ul li {
+/* spaces li items out from each other */
+    padding-left: 10%;
+}
+
+header a{
+    text-decoration: none;
+    color: brown;
+}
+
+/* make the section take up the full height of the viewport with a grey border, and center its contents both horizontally and vertically. */
+section{
+    height: 100vh;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center; /* centers flex items horizontally within container */
+    align-items: center; /* centers flex items vertically within container */
+}
+
+/* sets the top margin of container to 10% of height of its container element, section */
+/* .container {
+    margin-top: 10%;
+} */
+
+.container img {
+    height: 300px;
+    border-radius: 50%;
+}
+
+.container h2 {
+    /* add more space between h2 and img */
+    margin-top: 3%;
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
+}
+
+.container p, ul {
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+footer {
+    /* turns footer into flexbox, then centers flex items horizontally in footer */
+
+    /* makes the text easier to read by giving more space between lines */
+    line-height: 40px; 
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;    
+}
+
+#intro {
+    background-image: url('../images/emily_johnson.png');
+    background-repeat: round;
+}
+
+#about {
+    background-color: bisque;
+}
+
+#contact {
+    background-color: blanchedalmond;
+}
