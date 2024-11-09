@@ -71,7 +71,7 @@ footer {
 
 #intro {
     background-image: url('../images/emily_johnson.png');
-    background-repeat: round;
+    background-repeat:no-repeat;
 }
 
 #about {
